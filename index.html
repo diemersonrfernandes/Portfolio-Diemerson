@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="\pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Diemerson</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--import carrossel-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- fim import carrossel-->
+
+    <!-- inicio import script-->
+    <script defer src="script.js"></script>
+    <!-- fim import script-->
+
+    <!-- inicio import icon logo-->
+    <link rel="icon" type="image/x-icon" href="/android-chrome-512x512.png">
+    <!-- fim import icon logo-->
+
+    <!-- inicio import css e scss-->
+    <link rel="stylesheet" href="/css/hamburgers.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- fim import css e scss-->
+
+    <!--import icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/41ca728b8c.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--fim import icones-->
+</head>
+
+<body>
+
+    <div class="body-menu-mobile">
+        <article class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="ul-menu-mobile">
+                <li class="li-menu-mobile">
+                    <a class="a-menu-mobile" href="index.html" onclick="closeMenu()">Início</a>
+                </li>
+                <li class="li-menu-mobile">
+                    <a class="a-menu-mobile" href="#sobre" onclick="closeMenu()">Sobre</a>
+                </li>
+                <li class="li-menu-mobile">
+                    <a class="a-menu-mobile" href="#projetos" onclick="closeMenu()">Projetos</a>
+                </li>
+                <li class="li-menu-mobile">
+                    <a class="a-menu-mobile" href="#hardskill" onclick="closeMenu()">Hard Skills</a>
+                </li>
+                <li class="li-menu-mobile">
+                    <a class="a-menu-mobile" href="#contato" onclick="closeMenu()"><button class="botao-menu-mobile" onclick="closeMenu()">Contato</button></a>
+                </li>
+            </ul>
+        </article>
+
+        <header class="header-menu-mobile">
+            <div class="container-menu-mobile">
+                <a href="#" class="a-menu-mobile">
+                    <img class="img-menu-mobile" src="/img/Logo.png" alt="">
+                </a>
+                <button id="js-btn-menu" class="hamburger hamburger--spin button-menu-mobile" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </header>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const btnMenu = document.getElementById('js-btn-menu');
+                const navbarCollapse = document.getElementById('navbar-collapse');
+        
+                btnMenu.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('opened-menu');
+                    btnMenu.classList.toggle('is-active');
+                    navbarCollapse.classList.toggle('collapse-show');
+                });
+            });
+        
+            function closeMenu() {
+                document.documentElement.classList.remove('opened-menu');
+                document.getElementById('js-btn-menu').classList.remove('is-active');
+                document.getElementById('navbar-collapse').classList.remove('collapse-show');
+            }
+        </script>
+    </div>
+
+    <header>
+        <div class="interface">
+
+            <div class="logo">
+                <a href="#">
+                    <img id="index.html" src="/assets/Logo.png" alt="logo">
+                </a>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a class="scale" href="index.html">Início</a></li>
+                    <li><a class="scale" href="#sobre">Sobre</a></li>
+                    <li><a class="scale" href="#projetos">Projetos</a></li>
+                    <li><a class="scale" href="#hardskill">Hard Skills</a></li>
+                </ul>
+            </nav>
+
+            <div class="botao-contato">
+                <a href="#contato">
+                    <button>Contato</button>
+                </a>
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>EU SOU DIEMERSON RODRIGUES <span>DESENVOLVEDOR FRONT-END</span></h1>
+                    <p>Sou um desenvolvedor front-end apaixonado por tecnologia,
+                         busco constantemente aprender e aprimorar minhas habilidades,
+                          elevar o padrão de qualidade, criatividade e inovação em cada 
+                          projeto que estou envolvido.  Sou movido pelo desafio de resolver
+                           problemas complexos de maneira elegante e eficiente,
+                            aproveitando ao máximo as ferramentas e tecnologias 
+                            disponíveis para criar experiências digitais únicas e
+                             memoráveis para os usuários.</p>
+                        <div class="botao-curriculo">
+                            <a href="CURRICULO DIEMERSON RODRIGUES.pdf" download="CURRICULO DIEMERSON RODRIGUES.pdf">
+                                <button>Download CV</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="img-topo-site">
+                        <img src="/assets/diemerson-inicio.png" alt="">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+         <section class="especialidades" id="#especialidades">
+             <div class="interface">
+                <h2 id="hardskill" class="titulo-hard">HARD <span>SKILLS</span></h2>
+                <div class="flex">
+
+                    <div class="especialidades-box">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML5</h3>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="fa-brands fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class='bx bxl-typescript'></i>
+                        <h3>TypeScript</h3>
+                    </div>
+
+                </div>
+             </div>
+        </section>
+
+        <section class="especialidade">
+            <div class="interface">
+                <div class="flex">
+
+                    <div class="especialidade-box">
+                        <i class="fa-brands fa-react"></i>
+                        <h3>React.JS</h3>
+                    </div>
+
+                    <div class="especialidade-box">
+                        <i class="fa-brands fa-node-js"></i>
+                        <h3>Node.JS</h3>
+                    </div>
+
+                    <div class="especialidade-box">
+                        <i class='bx bxl-mongodb'></i>
+                        <h3>MongoDB</h3>
+                    </div>
+
+                    <div class="especialidade-box">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h3>Git</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <div class="interface">
+                <h2 id="sobre" class="titulo">SOB<span>RE</span></h2>
+                <div class="flex">
+
+                    <div class="img-sobre">
+                        <img src="/assets/diemerson-sobre.png" alt="">
+                    </div>
+
+                    <div class="txt-sobre">
+
+                        <h2>OLÁ MUNDO, SAIBA MAIS <span class="sobre-mim-menor"> SOBRE MIM</span></h2>
+                        <p>Me chamo Diemerson Rodrigues, tenho 31 anos, 
+                            resido em Brasília-DF, sou apaixonado por tecnologia,
+                             formado em Análise e Desenvolvimento de Sistemas.
+                              Durante minha trajetória desenvolvi projetos acadêmicos
+                               individuas, freelances e projetos em equipe, 
+                               como Landing Pages, Sites Institucionais, Blog,
+                                entre outros. 
+                        </p>
+                        <p>
+                            Estou cursando o penúltimo semestre de inglês e aprimorando
+                             minhas habilidades no curso de desenvolvimento DEVCLUB 
+                             Full Stack, utilizando as tecnologia HTML, CSS, JavaScriptT, 
+                             TypeScript, React.JS, Node.JS, API.RESTful e Banco de dados.
+                        <div class="botao-social">
+                            <a href="https://github.com/diemersonrfernandes"><button><i class="fa-brands fa-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/diemerson-rodrigues-fernandes/"><button><i class="fa-brands fa-linkedin"></i></button></a>
+                            <a href="https://contate.me/diemersonrfernandes"><button><i class="fa-brands fa-whatsapp"></i></button></a>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                
+              
+            </div>
+        </section>
+
+        <!--inicio do carrossel portifolio
+
+        <h2  class="titulo-carrossel titulo-desktop">MEU <span>PORTFÓLIO</span></h2>-->
+
+
+    
+        <div class="body-pai">
+
+            <div class="swiper mySwiper">
+                <h2 id="projetos" class="titulo-carrossel titulo-desktop">MEUS <span>PROJETOS</span></h2>
+               <div class="swiper-wrapper">
+          
+                <div class="swiper-slide">
+                  <img  class="img-carrossel" src="/assets/conversor.jpg" />
+                  <h4 class="titulo-carrossel">CONVERSOR DE MOEDAS</h4>
+                  <p class="paragrafo-carrossel">Nessa aplicação basta escolher a moeda que quer converter
+                      inserir os valores e clicar no botão converter. </br></br></br></p>
+                <div class="botao-github">
+                  <a href="https://conversor-de-moedas-geral.netlify.app/" target="_blank" class="chamar"><button>Projeto</button></a>
+                  <a href="https://github.com/diemersonrfernandes/E-Commerce" target="_blank" class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img  class="img-carrossel" src="/assets/ecommerce.jpeg" />
+                  <h4 class="titulo-carrossel">E-COMMERCE</h4>
+                  <p class="paragrafo-carrossel">Nessa aplicação de Ecommerce simula a criação de cadastro
+                      e pagamento do cliente em uma loja Ecommerce. </br></br></br></p>
+                <div class="botao-github">
+                  <a href="https://ecommerce-cadastro.netlify.app/" target="_blank" class="chamar"><button>Projeto</button></a>
+                  <a href="https://github.com/diemersonrfernandes/E-Commerce" target="_blank" class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img  class="img-carrossel" src="/assets/portfolio.jpg" />
+                  <h4 class="titulo-carrossel">PORTFÓLIO</h4>
+                  <p class="paragrafo-carrossel">Desenvolvimento de página web com HTML, 
+                    CSS, API e JavaScript, que exibe as qualificações e 
+                    conjuntos de projetos realizados.  </br></br></br></p>
+                <div class="botao-github">
+                  <a href="https://portfolio-dev-diemerson.netlify.app/" target="_blank" class="chamar"><button>Projeto</button></a>
+                  <a href="https://github.com/diemersonrfernandes/Portfolio-Diemerson" target="_blank" class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                </div>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="assets/forca.jpeg" />
+                  <h4 class="titulo-carrossel">JOGO DA FORCA</h4>
+                  <p class="paragrafo-carrossel">Jogo da forca, no qual você deve adivinhar a palavra
+                      oculta. </br></br></br></br></br></p>
+                  <div class="botao-github">
+                  <a href="https://jogo-da-forca-geral.netlify.app/" target="_blank" class="chamar"><button>Projeto</button></a>
+                  <a href="https://github.com/diemersonrfernandes/Jogo-Da-Forca" target="_blank" class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                </div>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="/assets/infofilmes.jpeg" />
+                  <h4 class="titulo-carrossel" >INFO FILMES</h4>
+                  <p class="paragrafo-carrossel">Um catalago de filmes, no qual você pesquisa o nome do filme,
+                      e ele trará as informções e capa do filme. </br></br></br></p>
+                  <div class="botao-github">    
+                  <a href="https://info-filmes-catalago.netlify.app/" target="_blank" class="chamar"><button>Projeto</button></a>
+                  <a href="https://github.com/diemersonrfernandes/InfoFilmes" target="_blank" class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                </div>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="/assets/jokenpo.jpeg" />
+                  <h4 class="titulo-carrossel">PEDRA, PAPEL E TESOURA</h4>
+                  <p class="paragrafo-carrossel">Famoso jogo de pedra, papel ou tesoura, no qual você escolhe
+                      umas das três opções para jogar contra a maquina. </br></br></br></p> 
+                <div class="botao-github">
+                  <a href="https://jokenpojogo.netlify.app/" target="_blank" class="chamar"><button>Projeto</button></a>
+                  <a href="https://github.com/diemersonrfernandes/Jogo-Pedra-Papel-e-Tesoura" target="_blank" class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                </div>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="/assets/lista.jpeg" />
+                  <h4 class="titulo-carrossel">LISTA DE TAREFAS</h4>
+                  <p class="paragrafo-carrossel">Todo List, é uma aplicação para que possar criar uma
+                      listas de afazeres e organizar melhor seu tempo. </br></br></br></p>
+                <div class="botao-github">
+                  <a href="https://todolist-lista.netlify.app" target="_blank" class="chamar"><button>Projeto</button></a>
+                  <a href="https://github.com/diemersonrfernandes/TodoList" target="_blank" class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                </div>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="/assets/previsao.jpeg" />
+                  <h4 class="titulo-carrossel">PREVISÃO DO TEMPO</h4>
+                  <p class="paragrafo-carrossel">Aplicação que trás a previsão do tempo ao digitar a
+                      localidade desejada </br></br></br></br></p>
+                <div class="botao-github">
+                  <a href="https://previsao-do-tempo-geral.netlify.app" target="_blank" class="chamar"><button>Projeto</button></a>
+                  <a href="https://github.com/diemersonrfernandes/Previsao-do-Tempo" target="_blank" class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                </div>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="/assets/sorteador.jpeg" />
+                  <h4 class="titulo-carrossel">SORTEADOR DE NÚMEROS</h4>
+                  <p class="paragrafo-carrossel">Gera números aleatórios, basta os usuários informar os
+                      números entre o intervalo em que deseja ser sorteado
+                      e clicar em sortear, após isso o resultado aparecerá na
+                      tela.</p>
+                <div class="botao-github">
+                  <a href="https://sorteador-de-numeros-aleatorios.netlify.app" target="_blank" class="chamar"><button>Projeto</button></a>
+                  <a href="https://github.com/diemersonrfernandes/Sorteador-de-numeros" target="_blank" class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                </div>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="/assets/supermercado.jpeg" />
+                  <h4 class="titulo-carrossel">SUPERMERCADO</h4>
+                  <p class="paragrafo-carrossel">Nessa aplicação do Supermercado, simulamos o cadastro
+                      do produto e como dar desconto no valor total da compra. </br></br> </p>
+                <div class="botao-github">
+                  <a href="https://supermercado-baratinho-cadastro.netlify.app" target="_blank" class="chamar"><button>Projeto</button></a>
+                  <a href="https://github.com/diemersonrfernandes/Supermercado-Baratinho" target="_blank" class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-carrossel" src="/assets/cep.jpg" />
+                    <h4 class="titulo-carrossel">BUSCA CEP</h4>
+                    <p class="paragrafo-carrossel">Nessa aplicação para buscar cep, após preencher o campo CEP
+                      e clicar em buscar, ele trás o endereço completo. </br></br></br> </p>
+                  <div class="botao-github">
+                    <a href="https://buscador-dee-ceps.netlify.app/" target="_blank" class="chamar"><button>Projeto</button></a>
+                    <a href="https://github.com/diemersonrfernandes/Buscador-de-CEP" target="_blank" class="chamar"><button> GitHub <i class="fa-brands fa-github"></i> </button></a>
+                  </div>
+                  </div>
+          
+              
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="botao-ver-todos">
+            <a href="https://github.com/diemersonrfernandes?tab=repositories" target="_blank" class="chamar"><button>
+                Todos os Projetos <i class="fa-brands fa-github"></i> </button></a>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                autoplay: {
+                          delay: 2500,
+                          disableOnInteraction: false,
+                          pauseOnMouseEnter: true,
+                        },
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                },
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+              });
+            </script>
+          
+
+
+        <!--fim do carrossel portifolio-->
+
+        <section class="formulario"><!--inicio do formulario-->
+            <div class="interface">
+                <h2 id="contato" class="titulo-entre-contato">ENTRE EM <span>CONTATO</span></h2>
+
+                <form method="post" action="https://formsubmit.co/diemersonrfernandes@gmail.com">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+                    <input type="email" name="email" id="email" placeholder="Seu email" required>
+                    <input type="tel" maxlength="11" name="telefone" id="telefone"
+                        placeholder="Seu celular: (xx) xxxxx - xxxx"
+                        onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;">
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="8" placeholder="Digite sua mensagem"
+                        required></textarea>
+                    <div class="botao-enviar">
+                        <input type="submit" value="Enviar" >
+                    </div>
+
+                    <input type="hidden" name="_subject" value="Novo Contato!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+
+                </form>
+
+            </div>
+        </section><!-- fim do formulario-->
+
+    </main>
+
+
+
+    <!-- inicio do botao subir topo -->
+    
+    <button id="btnTop" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+        // Função para rolar a página para o topo
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    
+        // Exibir ou ocultar o botão com base na posição de rolagem
+        window.onscroll = function() {
+            var btnTop = document.getElementById("btnTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnTop.style.display = "block";
+            } else {
+                btnTop.style.display = "none";
+            }
+        };
+    </script>
+
+
+    <!-- fim do botao subir topo -->
+
+
+
+    <footer><!-- inicio do rodapé -->
+        <div class="interface">
+
+            <div class="line-footer"> <!-- inicio da line-footer -->
+                <div class="flex">
+                    <div class="logo-footer"><!-- inicio da logo-footer -->
+                        <img src="/assets/Logo.png"  alt="">
+                    </div> <!-- fim da logo-footer -->
+
+                    <div class="botao-social"> <!-- inicio do botao-social -->
+                        <a href="https://github.com/diemersonrfernandes"><button><i class="fa-brands fa-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/diemerson-rodrigues-fernandes/"><button><i class="fa-brands fa-linkedin"></i></button></a>
+                        <a href="https://contate.me/diemersonrfernandes"><button><i class="fa-brands fa-whatsapp"></i></button></a>
+                    </div> <!-- fim do botao-social -->
+                </div>
+            </div> <!-- fim da line-footer -->
+
+            <div class="line-footer borda"> <!-- inicio da line-footer -->
+                <p><i class="bi bi-envelope-at-fill"></i>
+                    <a href="mailto:diemersonrfernandes@gmail.com">Diemersonrfernandes@gmail.com</a>
+                </p>
+            </div> <!-- fim da line-footer -->
+        </div>
+    </footer><!-- fim do rodapé -->
+
+</body>
+<script src="script.js"></script>
+
+</html>
